@@ -8,7 +8,6 @@ import './index.css'
 const Header = props => {
   const onClickLogout = () => {
     const {history} = props
-
     Cookies.remove('jwt_token')
     history.replace('/login')
   }
@@ -46,7 +45,7 @@ const Header = props => {
             type="button"
             className="nav-mobile-btn"
             onClick={onClickLogout}
-          >
+          >   
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png"
               alt="nav logout"
